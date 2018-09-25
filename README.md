@@ -36,4 +36,17 @@ With left outer join all of the rows of the left table are included in the joine
 
 RIGHT OUTER JOIN
 ----------------
-All the rows of the right table are included on the right outer join. This means that the right table that don’t have a column in left table still get displayed.
+All the rows of the right table are included on the right outer join. 
+This means that the right table that don’t have a column in left table still get displayed.
+A right outer join will give all rows in B, plus any common rows in A.
+
+>select * from a RIGHT OUTER JOIN b on a.a = b.b;
+>select a.*, b.*  from a,b where a.a(+) = b.b;
+
+    a    |  b
+    -----+----
+    3    |  3
+    4    |  4
+    null |  5
+    null |  6
+
