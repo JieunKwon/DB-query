@@ -8,13 +8,17 @@ INNER JOIN
 An inner join using either of the equivalent queries gives the intersection of the two tables, 
 i.e. the two rows they have in common.
 
-select * from a INNER JOIN b on a.a = b.b;
-select a.*, b.*  from a,b where a.a = b.b;
+>select * from a INNER JOIN b on a.a = b.b;
+>select a.*, b.*  from a,b where a.a = b.b;
 
 a | b
+
 --+--
+
 3 | 3
+
 4 | 4
+
 
 LEFT OUTER JOIN
 ---------------- 
