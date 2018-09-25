@@ -11,11 +11,11 @@ i.e. the two rows they have in common.
 >select * from a INNER JOIN b on a.a = b.b;
 >select a.*, b.*  from a,b where a.a = b.b;
 
-a | b
---+--
+    a | b
+    --+--
 
-3 | 3
-4 | 4
+    3 | 3
+    4 | 4
 
 
 LEFT OUTER JOIN
@@ -26,13 +26,13 @@ With left outer join all of the rows of the left table are included in the joine
 >select * from a LEFT OUTER JOIN b on a.a = b.b;
 >select a.*, b.*  from a,b where a.a = b.b(+);
 
-a |  b
---+-----
+    a |  b
+    --+-----
 
-1 | null
-2 | null
-3 |    3
-4 |    4
+    1 | null
+    2 | null
+    3 |    3
+    4 |    4
 
 RIGHT OUTER JOIN
 ----------------
