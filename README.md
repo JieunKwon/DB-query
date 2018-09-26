@@ -1,4 +1,4 @@
-# DB-query
+# DB-SQL query
 Practice and note for sql query
 
 @ Sept 2018
