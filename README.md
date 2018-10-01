@@ -1,5 +1,5 @@
 # DB-SQL query
-Practice and note for sql query
+Practice and note for joining tables
 
 @ Sept 2018
 
