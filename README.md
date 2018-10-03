@@ -34,6 +34,7 @@ With left outer join all of the rows of the left table are included in the joine
     3 |    3
     4 |    4
 
+
 RIGHT OUTER JOIN
 ----------------
 All the rows of the right table are included on the right outer join. 
