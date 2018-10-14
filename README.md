@@ -25,7 +25,10 @@ DML
        ex)
        insert
        update
+       delete
        select
+       merge
+       locktable
     
 DCL
 ------------
