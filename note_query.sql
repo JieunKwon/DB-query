@@ -1,3 +1,4 @@
+/* DDL (Data Definition Language) */
 • create db & table
 
 DROP DATABASE IF EXISTS PUBLICLIBRARY;
@@ -31,6 +32,7 @@ CREATE TABLE library (
 ALTER TABLE library
 ADD qty int;
 
+/* DML (Data manupulation Language) */
 Insert into books (title, author, price, type, subject)
 values ('Servlets and JSP','Murach',40.75,'Technology','Software Engineering');
 
