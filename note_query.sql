@@ -36,6 +36,27 @@ values ('Servlets and JSP','Murach',40.75,'Technology','Software Engineering');
 
 Insert into library ( branchcode, borrowdate, returndate, fineamount)
         values (1001, curdate(), adddate(curdate(), INTERVAL 21 DAY),0.00)
+delete from books where subject = 'Software’;
+select * from books where title like ‘%software%’
 
+update library set returndate = DATE('2018-09-27')  
+where branchcode=1144 and bookcode=1;
+
+Select count(carID) 
+From car
+Where price > 13000
+
+Select SUM(price) 
+From car
+Where colour in ('White', ‘black’);;
+
+Select colour, AVG(price) 
+From car
+Where model = 'Civic'
+Group by colour;
+
+Select Max(Year) as Newest, Min(Year) as Oldest
+From car
+Where model= ‘Fusion’;
 
 
