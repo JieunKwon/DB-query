@@ -9,24 +9,26 @@ DDL
 >  Data Definition Language
        
        ex ) 
-        create
-        drop 
-        alter
+       create
+       drop 
+       alter
     
 DML
 -----------
-- Data Manupulation Language
-- ex)
-    insert
-    update
-    select
+> Data Manupulation Language
+
+       ex)
+       insert
+       update
+       select
     
 DCL
 ------------
-- Data Control Language
-- ex) 
-    grant
-    revoke 
+> Data Control Language
+
+       ex) 
+       grant
+       revoke 
     
 TCL
 -------------
