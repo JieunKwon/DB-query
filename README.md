@@ -1,5 +1,7 @@
 # DB-SQL query
+
 -Define Database Language
+
 -Practice and note for joining tables
 
 @ Sept 2018
