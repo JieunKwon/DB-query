@@ -32,7 +32,13 @@ DCL
     
 TCL
 -------------
-
+> Transaction Control Language
+       
+       ex)
+       commit
+       rollback
+       savepoint
+       
 
 INNER JOIN
 ---------------
