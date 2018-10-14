@@ -1,7 +1,35 @@
 # DB-SQL query
-Practice and note for joining tables
+-Define Database Language
+-Practice and note for joining tables
 
 @ Sept 2018
+
+DDL
+-----------
+- Data Definition Language
+- ex ) 
+    create
+    drop 
+    alter
+    
+DML
+-----------
+- Data Manupulation Language
+- ex)
+    insert
+    update
+    select
+    
+DCL
+------------
+- Data Control Language
+- ex) 
+    grant
+    revoke 
+    
+TCL
+-------------
+
 
 INNER JOIN
 ---------------
