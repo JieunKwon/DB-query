@@ -31,5 +31,11 @@ CREATE TABLE library (
 ALTER TABLE library
 ADD qty int;
 
+Insert into books (title, author, price, type, subject)
+values ('Servlets and JSP','Murach',40.75,'Technology','Software Engineering');
+
+Insert into library ( branchcode, borrowdate, returndate, fineamount)
+        values (1001, curdate(), adddate(curdate(), INTERVAL 21 DAY),0.00)
+
 
 
