@@ -6,11 +6,12 @@
 
 DDL
 -----------
-- Data Definition Language
-- ex ) 
-    create
-    drop 
-    alter
+>  Data Definition Language
+       
+       ex ) 
+        create
+        drop 
+        alter
     
 DML
 -----------
