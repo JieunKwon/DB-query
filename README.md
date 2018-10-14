@@ -10,10 +10,13 @@ DDL
 -----------
 >  Data Definition Language
        
-       ex ) 
+       ex) 
        create
        drop 
        alter
+       truncate
+       comment
+       rename
     
 DML
 -----------
