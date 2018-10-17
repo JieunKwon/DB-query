@@ -1,5 +1,6 @@
 use sheridanusedcars;
 
+/* SELECT */
 select * 
 from sheridanusedcars.car
 where year < 2008;
@@ -26,27 +27,27 @@ Where colour in ('White' , 'black');
 
 
 Select * 
-	From sheridanusedcars.car
+From sheridanusedcars.car
 Where model = 'Civic' and price < 12000;
 
 select * 
 from sheridanusedcars.car
-	where NOT( year < 2008);
+where NOT( year < 2008);
     
 select * 
 from sheridanusedcars.car
-	where  year >= 2008;
+where  year >= 2008;
     
 Select * 
-	From sheridanusedcars.car
-	Where NOT ( colour = 'silver' or colour = 'gray' ) 
+From sheridanusedcars.car
+Where NOT ( colour = 'silver' or colour = 'gray' ) 
     AND ( price >= 13000 AND price <= 16000);  
 
 
 Select * 
-	From sheridanusedcars.car
-	Where NOT ( colour = 'silver' or colour = 'gray') 
-AND price BETWEEN 13000 AND 16000;  
+From sheridanusedcars.car
+Where NOT IN ( 'white' , 'black') 
+AND (price BETWEEN 13000 AND 16000);  
 
 
 select COUNT(carID) 
