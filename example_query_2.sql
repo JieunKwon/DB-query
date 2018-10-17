@@ -68,36 +68,40 @@ Select Max(Year) as Newest, Min(Year) as Oldest
 From sheridanusedcars.car
 Where model= 'Fusion';
 
+/* INNER JOIN */
 Select car.model, car.year, car.price, manufacturer.manufacturer
-From sheridanusedcars.Car INNER JOIN sheridanusedcars.manufacturer ON
+From sheridanusedcars.Car
+INNER JOIN 
+sheridanusedcars.manufacturer ON
 (Car.manufacturerID = manufacturer.manufacturerID)
 Where manufacturer = 'TOYOTA';
 
 
 select sheridanusedcars.car.model, sheridanusedcars.car.year, sheridanusedcars.car.price
-From sheridanusedcars.car INNER JOIN sheridanusedcars.manufacturer ON
+From sheridanusedcars.car 
+INNER JOIN 
+sheridanusedcars.manufacturer ON
 	 sheridanusedcars.car.manufacturerID = sheridanusedcars.manuracturer.manufacturerID 
 Where manufacturer = 'TOYOTA';
 
 
 Select car.model, car.year, car.price
-from car INNER JOIN manufacturer ON
+from car 
+INNER JOIN manufacturer ON
      manufacturer.manufacturerID = car.manufacturerID
 Where manufacturer.manufacturer in ('Nissan','Honda','Hyundai');
 
 
 Select manufacturer.manufacturer, car.model, car.year, car.colour 
- from car INNER JOIN manufacturer ON
- manufacturer.manufacturerID = car.manufacturerID
-	Where manufacturer.manufacturer in ('Ford','Chevrolet');
+from car 
+INNER JOIN manufacturer ON
+ 	manufacturer.manufacturerID = car.manufacturerID
+Where manufacturer.manufacturer in ('Ford','Chevrolet');
     
     
 Select manufacturer.manufacturer, car.model, car.price, car.colour 
- from car INNER JOIN manufacturer ON
- manufacturer.manufacturerID = car.manufacturerID
-	Where car.price > 14500;
-    
-    
-select * from manufacturer ;
+from car 
+INNER JOIN manufacturer ON
+ 	manufacturer.manufacturerID = car.manufacturerID
+Where car.price > 14500;
 
-select * from car ;
