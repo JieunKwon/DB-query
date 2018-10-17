@@ -2,27 +2,27 @@ use sheridanusedcars;
 
 select * 
 from sheridanusedcars.car
-	where year < 2008;
+where year < 2008;
 
 
 Select * 
-	From sheridanusedcars.car
-	Where price >= 10000
+From sheridanusedcars.car
+Where price >= 10000
 Order by model asc;
  
  
- Select * 
-	From sheridanusedcars.car
-	Where colour != 'White'
+Select * 
+From sheridanusedcars.car
+Where colour != 'White'
 Order by model asc, price asc;
 
 Select * 
-	From sheridanusedcars.car
-	Where colour = 'White' or colour = 'black'; 
+From sheridanusedcars.car
+Where colour = 'White' or colour = 'black'; 
 
 Select * 
-	From sheridanusedcars.car
-	Where colour in ('White' , 'black'); 
+From sheridanusedcars.car
+Where colour in ('White' , 'black'); 
 
 
 Select * 
