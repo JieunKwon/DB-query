@@ -50,43 +50,47 @@ Where NOT IN ( 'white' , 'black')
 AND (price BETWEEN 13000 AND 16000);  
 
 
+/* Aggrigation */
 select COUNT(carID) 
-	From sheridanusedcars.car
-	Where price >= 13000;
+From sheridanusedcars.car
+Where price >= 13000;
 
 Select SUM(price) 
-	From sheridanusedcars.car
+From sheridanusedcars.car
 Where model = 'Civic';
 
 Select colour, AVG(price) 
-	From sheridanusedcars.car
+From sheridanusedcars.car
 Where model = 'Civic'
-	Group by colour;
+Group by colour;
 
 Select Max(Year) as Newest, Min(Year) as Oldest
 From sheridanusedcars.car
 Where model= 'Fusion';
 
 Select car.model, car.year, car.price, manufacturer.manufacturer
-	From sheridanusedcars.Car INNER JOIN sheridanusedcars.manufacturer ON
+From sheridanusedcars.Car INNER JOIN sheridanusedcars.manufacturer ON
 (Car.manufacturerID = manufacturer.manufacturerID)
-	Where manufacturer = 'TOYOTA';
+Where manufacturer = 'TOYOTA';
 
 
 select sheridanusedcars.car.model, sheridanusedcars.car.year, sheridanusedcars.car.price
-	From sheridanusedcars.car INNER JOIN sheridanusedcars.manufacturer ON
+From sheridanusedcars.car INNER JOIN sheridanusedcars.manufacturer ON
 	 sheridanusedcars.car.manufacturerID = sheridanusedcars.manuracturer.manufacturerID 
-	Where manufacturer = 'TOYOTA';
+Where manufacturer = 'TOYOTA';
+
 
 Select car.model, car.year, car.price
- from car INNER JOIN manufacturer ON
- manufacturer.manufacturerID = car.manufacturerID
-	Where manufacturer.manufacturer in ('Nissan','Honda','Hyundai');
+from car INNER JOIN manufacturer ON
+     manufacturer.manufacturerID = car.manufacturerID
+Where manufacturer.manufacturer in ('Nissan','Honda','Hyundai');
+
 
 Select manufacturer.manufacturer, car.model, car.year, car.colour 
  from car INNER JOIN manufacturer ON
  manufacturer.manufacturerID = car.manufacturerID
 	Where manufacturer.manufacturer in ('Ford','Chevrolet');
+    
     
 Select manufacturer.manufacturer, car.model, car.price, car.colour 
  from car INNER JOIN manufacturer ON
