@@ -55,18 +55,22 @@ select COUNT(carID)
 From sheridanusedcars.car
 Where price >= 13000;
 
+
 Select SUM(price) 
 From sheridanusedcars.car
 Where model = 'Civic';
+
 
 Select colour, AVG(price) 
 From sheridanusedcars.car
 Where model = 'Civic'
 Group by colour;
 
+
 Select Max(Year) as Newest, Min(Year) as Oldest
 From sheridanusedcars.car
 Where model= 'Fusion';
+
 
 /* INNER JOIN */
 Select car.model, car.year, car.price, manufacturer.manufacturer
